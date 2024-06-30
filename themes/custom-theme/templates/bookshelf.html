@@ -1,0 +1,18 @@
+<!-- themes/custom-theme/templates/bookshelf.html -->
+{% extends "base.html" %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/bookshelf.css">
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for article in articles %}
+      {% if article.category == 'Bookshelf' %}
+      <div class="article-content">
+        {{ article.content }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock %}

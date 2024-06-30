@@ -1,0 +1,18 @@
+<!-- themes/custom-theme/templates/posts.html -->
+{% extends "base.html" %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/blog.css">
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for article in articles %}
+      {% if article.category == 'Blog' %}
+        <li>
+          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a> - {{ article.date.strftime('%Y-%m-%d') }}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock %}

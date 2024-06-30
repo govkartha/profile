@@ -1,0 +1,10 @@
+/* themes/custom-theme/static/css/bookshelf.css */
+
+/* Bookshelf specific styles */
+body.bookshelf-page {
+    background-color: #f0e6f6;
+}
+
+h1.bookshelf-title {
+    color: #6f42c1;
+}

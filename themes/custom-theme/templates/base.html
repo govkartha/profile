@@ -1,0 +1,27 @@
+<!-- themes/custom-theme/templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ SITENAME }}{% if title %} | {{ title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/main.css">
+    {% block additional_css %}{% endblock %}
+</head>
+<body>
+    <header>
+        <h1>{{ SITENAME }}</h1>
+    </header>
+    <nav>
+        {% for name, url in MENUITEMS %}
+        <a href="{{ SITEURL }}{{ url }}">{{ name }}</a>
+        {% endfor %}
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; {{ CURRENT_YEAR }} {{ AUTHOR }}</p>
+    </footer>
+</body>
+</html>

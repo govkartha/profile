@@ -1,0 +1,18 @@
+<!-- themes/custom-theme/templates/links.html -->
+{% extends "base.html" %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/links.css">
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for article in articles %}
+      {% if article.category == 'Links' %}
+      <div class="article-content">
+        {{ article.content }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock %}

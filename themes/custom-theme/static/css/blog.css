@@ -1,0 +1,10 @@
+/* themes/custom-theme/static/css/posts.css */
+
+/* Posts specific styles */
+body.posts-page {
+    background-color: #e6f7ff;
+}
+
+h1.posts-title {
+    color: #007bff;
+}

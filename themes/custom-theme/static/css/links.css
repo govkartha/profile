@@ -1,0 +1,10 @@
+/* themes/custom-theme/static/css/links.css */
+
+/* Links specific styles */
+body.links-page {
+    background-color: #e6ffe6;
+}
+
+h1.links-title {
+    color: #28a745;
+}
