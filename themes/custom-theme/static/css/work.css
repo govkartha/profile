@@ -1,0 +1,10 @@
+/* themes/custom-theme/static/css/work.css */
+
+/* Links specific styles */
+body.work-page {
+    background-color: #e6ffe6;
+}
+
+h1.work-title {
+    color: #28a745;
+}
