@@ -23,11 +23,12 @@ EXTRA_PATH_METADATA = {
     'theme/css/main.css': {'path': 'theme/css/main.css'},
     'theme/css/bookshelf.css': {'path': 'theme/css/bookshelf.css'},
     'theme/css/blog.css': {'path': 'theme/css/blog.css'},
-    'theme/css/links.css': {'path': 'theme/css/links.css'}
+    'theme/css/links.css': {'path': 'theme/css/links.css'},
+    'theme/css/work.css': {'path': 'theme/css/work.css'}
 }
 
-ARTICLE_URL = 'posts/{slug}.html'
-ARTICLE_SAVE_AS = 'posts/{slug}.html'
+ARTICLE_URL = 'blog/{slug}.html'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
 
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
@@ -36,12 +37,14 @@ MENUITEMS = [
     ('Home', '/'),
     ('Bookshelf', '/bookshelf.html'),
     ('Blog', '/blog.html'),
+    ('Work', '/work.html'),
     ('Links', '/links.html')
 ]
 
 TEMPLATE_PAGES = {
     'bookshelf.html': 'bookshelf.html',
     'blog.html': 'blog.html',
+    'work.html': 'work.html',
     'links.html': 'links.html',
 }
 
