@@ -1,0 +1,18 @@
+<!-- themes/custom-theme/templates/work.html -->
+{% extends "base.html" %}
+
+{% block additional_css %}
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/work.css">
+{% endblock %}
+
+{% block content %}
+  <ul>
+    {% for article in articles %}
+      {% if article.category == 'Work' %}
+      <div class="article-content">
+        {{ article.content }}
+      </div>
+      {% endif %}
+    {% endfor %}
+  </ul>
+{% endblock %}
